@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="theme-color" content="#111111" />
+  <title>title</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="css/vendor.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <script defer src="js/main.js"></script>
+</head>
+
+  <body class="page__body">
+    <header class="header">
+  <div class="container">
+    <div class="header__wrapper">
+      <a class="header__logo" href="">
+        <img src="../img/logo.svg" alt="Центр 7" width="210" height="50" />
+      </a>
+
+      <nav class="header__nav nav" data-menu>
+        <ul class="list-reset list">
+          <li class="item">
+            <a class="link" href="">О компании</a>
+          </li>
+
+          <li class="item sub-item">
+            <a class="link" href=""
+              >Услуги
+              <svg
+                width="23"
+                height="13"
+                viewBox="0 0 23 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.66663 1L11.6666 11L21.6666 1"
+                  stroke="#F6F6F6"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </a>
+            <div class="submenu">
+              <div class="submenu-wrapper">
+                <div class="submenu-group">
+                  <div class="submenu-title">Страхование</div>
+                  <ul class="list-reset submenu-list">
+                    <li class="submenu-item">
+                      <a href="">Автострахование</a>
+                    </li>
+                    <li class="submenu-item">
+                      <a href="">Персональный расчет по страховым продуктам</a>
+                    </li>
+                    <li class="submenu-item">
+                      <a href="">страхование недвижимости</a>
+                    </li>
+                    <li class="submenu-item">
+                      <a href="">страхование жизни</a>
+                    </li>
+                    <li class="submenu-item">
+                      <a href="">дмс</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="submenu-group">
+                  <div class="submenu-title">Кредитование</div>
+                  <ul class="list-reset submenu-list">
+                    <li class="submenu-item">
+                      <a href="">автокредитование</a>
+                    </li>
+                    <li class="submenu-item">
+                      <a href="">кредит под залог недвижимости</a>
+                    </li>
+                    <li class="submenu-item">
+                      <a href="">расторжение навязанных услуги</a>
+                    </li>
+                    <li class="submenu-item">
+                      <a href="">кредитные карты</a>
+                    </li>
+                    <li class="submenu-item">
+                      <a href="">ипотека</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="item">
+            <a class="link" href="">FAQ</a>
+          </li>
+
+          <li class="item">
+            <a class="link" href="">КЕШБЭК</a>
+          </li>
+
+          <li class="item">
+            <a class="link" href="">Контакты</a>
+          </li>
+        </ul>
+
+        <div class="mobile-actions">
+          <div class="header__cb">
+            <a class="header__phone" href="">8 800 800 80 80</a>
+            <span
+              >Бесплатный звонок <br />
+              по РФ</span
+            >
+          </div>
+          <button class="btn-reset btn--light" data-button="consult">
+            Получить консультацию
+          </button>
+          <button
+          class="btn-reset header__btn btn--border"
+          data-button="partner"
+        >
+          Стать партнером
+        </button>
+        </div>
+      </nav>
+
+      <div class="header__search search">
+        <button class="btn-reset search__button">
+          <svg
+            width="23"
+            height="24"
+            viewBox="0 0 23 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M22.2069 21.734L17.2947 16.8219C17.0551 16.5823 16.7365 16.4503 16.3976 16.4503C16.2138 16.4503 16.0366 16.4903 15.8742 16.564L14.6129 15.3027C16.394 13.7061 17.5167 11.3889 17.5167 8.81428C17.5167 4.00928 13.6075 0.100132 8.80244 0.100132C3.99737 0.100132 0.0881958 4.00928 0.0881958 8.81428C0.0881958 13.6194 3.99737 17.5285 8.80244 17.5285C10.75 17.5285 12.5503 16.8862 14.0029 15.8025L15.2943 17.094C15.187 17.2826 15.1289 17.4961 15.1289 17.7189C15.1289 18.0579 15.2609 18.3764 15.5005 18.616L20.4126 23.5283C20.6522 23.7679 20.9708 23.8999 21.3097 23.8999C21.6486 23.8999 21.9673 23.7678 22.2069 23.5282C22.4465 23.2886 22.5785 22.97 22.5785 22.6311C22.5785 22.2922 22.4465 21.9736 22.2069 21.734ZM0.913969 8.81428C0.913969 4.46463 4.4527 0.925919 8.80242 0.925919C13.1521 0.925919 16.6909 4.46463 16.6909 8.81428C16.6909 13.164 13.1522 16.7028 8.80242 16.7028C4.45272 16.7028 0.913969 13.164 0.913969 8.81428ZM21.623 22.9443C21.5393 23.028 21.428 23.0741 21.3097 23.0741C21.1913 23.0741 21.0801 23.028 20.9965 22.9444L16.0844 18.0321C16.0008 17.9485 15.9547 17.8372 15.9547 17.7189C15.9547 17.6006 16.0008 17.4894 16.0845 17.4057C16.1681 17.3221 16.2792 17.2761 16.3976 17.2761C16.5158 17.2761 16.627 17.3221 16.7107 17.4058L21.6229 22.3179C21.7066 22.4015 21.7527 22.5128 21.7527 22.631C21.7527 22.7494 21.7066 22.8606 21.623 22.9443Z"
+              fill="#F6F6F6"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <div class="header__actions">
+        <div class="header__cb">
+          <a class="header__phone" href="">8 800 800 80 80</a>
+          <span
+            >Бесплатный звонок <br />
+            по РФ</span
+          >
+        </div>
+
+        <div class="header__buttons">
+          <button
+            class="btn-reset header__btn btn--border"
+            data-button="partner"
+          >
+            Стать партнером
+          </button>
+          <button class="btn-reset btn--light" data-button="consult">
+            Получить консультацию
+          </button>
+        </div>
+      </div>
+      <button
+        class="btn-reset burger"
+        aria-label="Открыть меню"
+        aria-expanded="false"
+        data-burger=""
+      >
+        <span class="burger__line"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+    <main class="main">
+      <section class="hero hero-i">
+        <div class="container">
+          <div class="hero__wrapper">
+            <div class="hero__left">
+              <div class="hero__head">
+                <h1 class="hero__title">
+                  <div class="hero__title--accent">Ипотечный <br/> страховой полис</div>
+                </h1>
+
+                <p class="hero__desc">Защита вашего имущества, жизни и права собственности в соответствии с требованиями банка</p>
+                <p class="hero__text">
+                  Мы сэкономили для наших клиентов уже <br/> <span> более 5 000 000 ₽ </span>
+                </p>
+              </div>
+
+              <button class="btn-reset btn--accent hero__btn" type="button" data-button="consult">
+                Бесплатная консультация
+              </button>
+            </div>
+
+            <div class="hero__right">
+              <div class="hero__images">
+                <div class="hero__image shield">
+                  <img src="./img/ipoteka-hero-img.webp" alt="" />
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="i-futures">
+        <div class="container">
+          <div class="i-futures__items">
+            <div class="i-futures__item">
+              <div class="number">000</div>
+              <div class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </div>
+            </div>
+            <div class="i-futures__item">
+              <div class="number">000</div>
+              <div class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </div>
+            </div>
+            <div class="i-futures__item">
+              <div class="number">000</div>
+              <div class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="i-cashback">
+        <div class="container">
+          <div class="i-cashback__wrapper">
+            <div class="i-cashback__left">
+              <div class="title__section i-cashback__title">
+                Заберите Кешбек за полис!
+              </div>
+              <div class="i-cashback__text">
+                Вы уже оформили страховой полис в нашей компании? <br/> Не забудьте получить кешбэк за его оформление
+              </div>
+            </div>
+            <div class="i-cashback__right">
+              <div class="block__text">
+                <div class="title__section i-cashback__title">
+                  Кэшбек по ипотеке
+                  <span>до</span>
+                </div>
+                <button type="button" class="btn-reset btn--accent i-cashback__btn">Получить кешбэк</button>
+              </div>
+              <div class="image">
+                <img src="./img/10-c.webp" alt="Кешбек 10%">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="i-advantages">
+        <div class="container">
+          <div class="i-advantages__items">
+            <div class="item">
+              <div class="title">Страховой полис жизни и здоровья </div>
+              <ul class="list-reset list">
+                <li>Защита финансовых интересов заемщика и его семьи в случае потери трудоспособности или смерти.</li>
+                <li>Обеспечение выплаты кредита банку даже при наступлении тяжелых жизненных обстоятельств.</li>
+                <li>Снижение финансовой нагрузки на близких заемщика в случае его утраты.</li>
+              </ul>
+              <div class="image">
+                <img src="./img/i-futures-1.webp" alt="Страховой полис жизни и здоровья">
+              </div>
+            </div>
+            <div class="item">
+              <div class="title">Страховой полис недвижимости</div>
+              <ul class="list-reset list">
+                <li>Защита залогового имущества от рисков, таких как пожар, затопление, взрыв, природные катастрофы.</li>
+                <li>Сохранение стоимости имущества и уменьшение возможных убытков в случае повреждений.</li>
+                <li>Уверенность банка в сохранности залога, что является обязательным требованием при выдаче ипотеки.</li>
+              </ul>
+              <div class="image">
+                <img src="./img/i-futures-2.webp" alt="Страховой полис жизни и здоровья">
+              </div>
+            </div>
+            <div class="item">
+              <div class="title">Страховой полис жизни и здоровья </div>
+              <ul class="list-reset list">
+                <li>Защита финансовых интересов заемщика и его семьи в случае потери трудоспособности или смерти.</li>
+                <li>Обеспечение выплаты кредита банку даже при наступлении тяжелых жизненных обстоятельств.</li>
+                <li>Снижение финансовой нагрузки на близких заемщика в случае его утраты.</li>
+              </ul>
+              <div class="image">
+                <img src="./img/i-futures-3.webp" alt="Страховой полис жизни и здоровья">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="block-iframe">
+        <div class="container">
+          <div class="block-iframe__wrapper">
+            <div class="title__section block-iframe__title">
+              Рассчитай Страховой полис и найди <br/> самое подходящее предложение
+            </div>
+            <div class="block-iframe__buttons">
+              <button data-button="ipoteka" type="button" class="btn-reset btn--accent">Рассчитать и оформить полис</button>
+              <button type="button" class="btn-reset btn--border">Получить кешбэк</button>
+            </div>
+
+            <div class="block-iframe__img">
+              <img src="./img/block-iframe-igm.webp" aria-hidden="true">
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="partners">
+  <div class="container">
+    <div class="partners__wrapper">
+      <div class="left">
+        <h2 class="title__section partners__title">Наши партнеры</h2>
+        <p class="desc">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+          commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
+          et magnis dis parturient montes, nascetur ridiculus mus.
+        </p>
+
+        <div class="partners__actions">
+          <div class="btn--border action">Банки</div>
+          <div class="btn--accent action">Страховые компании</div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="partners__logo">
+          <img src="../img/partner.png" alt="" />
+        </div>
+        <div class="partners__logo">
+          <img src="../img/partner.png" alt="" />
+        </div>
+        <div class="partners__logo">
+          <img src="../img/partner.png" alt="" />
+        </div>
+        <div class="partners__logo">
+          <img src="../img/partner.png" alt="" />
+        </div>
+        <div class="partners__logo">
+          <img src="../img/partner.png" alt="" />
+        </div>
+        <div class="partners__logo">
+          <img src="../img/partner.png" alt="" />
+        </div>
+        <div class="partners__logo">
+          <img src="../img/partner.png" alt="" />
+        </div>
+        <div class="partners__logo">
+          <img src="../img/partner.png" alt="" />
+        </div>
+        <div class="partners__logo">
+          <img src="../img/partner.png" alt="" />
+        </div>
+        <div class="partners__logo">
+          <img src="../img/partner.png" alt="" />
+        </div>
+        <div class="partners__logo">
+          <img src="../img/partner.png" alt="" />
+        </div>
+        <div class="partners__logo">
+          <img src="../img/partner.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="reviews">
+  <div class="container">
+    <h2 class="title__section reviews__title">Отзывы наших клиентов</h2>
+
+    <div class="reviews__slider">
+      <div class="reviews__nav">
+        <div class="btn prev">
+          <svg
+            width="48"
+            height="48"
+            viewBox="0 0 48 48"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              width="48"
+              height="48"
+              rx="4"
+              transform="matrix(-1 0 0 1 48 0)"
+              fill="white"
+              fill-opacity="0.1"
+            />
+            <path
+              d="M33 10L15 24L33 38"
+              stroke="#F6F6F6"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+        <div class="btn next">
+          <svg
+            width="48"
+            height="48"
+            viewBox="0 0 48 48"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              width="48"
+              height="48"
+              rx="4"
+              fill="white"
+              fill-opacity="0.1"
+            />
+            <path
+              d="M15 10L33 24L15 38"
+              stroke="#F6F6F6"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <div class="swiper reviews__swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide reviews__slide">
+            <div class="video">
+              <div class="play">
+                <svg
+                  width="117"
+                  height="57"
+                  viewBox="0 0 117 57"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M17.8333 0C8.16827 0 0.333252 7.83502 0.333252 17.5C0.333252 27.165 8.16827 35 17.8333 35H21.9172C21.5363 36.4359 21.3333 37.9442 21.3333 39.5C21.3333 49.165 29.1683 57 38.8333 57H98.8333C108.498 57 116.333 49.165 116.333 39.5C116.333 29.835 108.498 22 98.8333 22H94.7493C95.1302 20.5641 95.3333 19.0558 95.3333 17.5C95.3333 7.83502 87.4982 0 77.8333 0H17.8333Z"
+                    fill="#DD1414"
+                  />
+                  <path
+                    d="M78.3333 29L48.3333 46.3205V11.6795L78.3333 29Z"
+                    fill="#F6F6F6"
+                  />
+                </svg>
+              </div>
+              <video src="" poster="../img/poster.webp"></video>
+            </div>
+
+            <div class="head">
+              <div class="date">10 декабря 2023</div>
+              <div class="rating">
+                <div class="stars">
+                  <svg
+                    width="59"
+                    height="11"
+                    viewBox="0 0 59 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5.66669 0.5L6.78926 3.95492H10.422L7.48304 6.09017L8.60561 9.54508L5.66669 7.40983L2.72776 9.54508L3.85033 6.09017L0.911405 3.95492H4.54412L5.66669 0.5Z"
+                      fill="#EFC20D"
+                    />
+                    <path
+                      d="M17.6667 0.5L18.7893 3.95492H22.422L19.483 6.09017L20.6056 9.54508L17.6667 7.40983L14.7278 9.54508L15.8503 6.09017L12.9114 3.95492H16.5441L17.6667 0.5Z"
+                      fill="#EFC20D"
+                    />
+                    <path
+                      d="M29.6667 0.5L30.7893 3.95492H34.422L31.483 6.09017L32.6056 9.54508L29.6667 7.40983L26.7278 9.54508L27.8503 6.09017L24.9114 3.95492H28.5441L29.6667 0.5Z"
+                      fill="#EFC20D"
+                    />
+                    <path
+                      d="M41.6667 0.5L42.7893 3.95492H46.422L43.483 6.09017L44.6056 9.54508L41.6667 7.40983L38.7278 9.54508L39.8503 6.09017L36.9114 3.95492H40.5441L41.6667 0.5Z"
+                      fill="#EFC20D"
+                    />
+                    <path
+                      d="M53.6667 0.5L54.7893 3.95492H58.422L55.483 6.09017L56.6056 9.54508L53.6667 7.40983L50.7278 9.54508L51.8503 6.09017L48.9114 3.95492H52.5441L53.6667 0.5Z"
+                      fill="#EFC20D"
+                    />
+                  </svg>
+                </div>
+                <div class="text">4,8</div>
+              </div>
+            </div>
+
+            <div class="desc">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            </div>
+          </div>
+
+          <div class="swiper-slide reviews__slide">
+            <div class="video">
+              <div class="play">
+                <svg
+                  width="117"
+                  height="57"
+                  viewBox="0 0 117 57"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M17.8333 0C8.16827 0 0.333252 7.83502 0.333252 17.5C0.333252 27.165 8.16827 35 17.8333 35H21.9172C21.5363 36.4359 21.3333 37.9442 21.3333 39.5C21.3333 49.165 29.1683 57 38.8333 57H98.8333C108.498 57 116.333 49.165 116.333 39.5C116.333 29.835 108.498 22 98.8333 22H94.7493C95.1302 20.5641 95.3333 19.0558 95.3333 17.5C95.3333 7.83502 87.4982 0 77.8333 0H17.8333Z"
+                    fill="#DD1414"
+                  />
+                  <path
+                    d="M78.3333 29L48.3333 46.3205V11.6795L78.3333 29Z"
+                    fill="#F6F6F6"
+                  />
+                </svg>
+              </div>
+              <video src="" poster="../img/poster.webp"></video>
+            </div>
+
+            <div class="head">
+              <div class="date">10 декабря 2023</div>
+              <div class="rating">
+                <div class="stars">
+                  <svg
+                    width="59"
+                    height="11"
+                    viewBox="0 0 59 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5.66669 0.5L6.78926 3.95492H10.422L7.48304 6.09017L8.60561 9.54508L5.66669 7.40983L2.72776 9.54508L3.85033 6.09017L0.911405 3.95492H4.54412L5.66669 0.5Z"
+                      fill="#EFC20D"
+                    />
+                    <path
+                      d="M17.6667 0.5L18.7893 3.95492H22.422L19.483 6.09017L20.6056 9.54508L17.6667 7.40983L14.7278 9.54508L15.8503 6.09017L12.9114 3.95492H16.5441L17.6667 0.5Z"
+                      fill="#EFC20D"
+                    />
+                    <path
+                      d="M29.6667 0.5L30.7893 3.95492H34.422L31.483 6.09017L32.6056 9.54508L29.6667 7.40983L26.7278 9.54508L27.8503 6.09017L24.9114 3.95492H28.5441L29.6667 0.5Z"
+                      fill="#EFC20D"
+                    />
+                    <path
+                      d="M41.6667 0.5L42.7893 3.95492H46.422L43.483 6.09017L44.6056 9.54508L41.6667 7.40983L38.7278 9.54508L39.8503 6.09017L36.9114 3.95492H40.5441L41.6667 0.5Z"
+                      fill="#EFC20D"
+                    />
+                    <path
+                      d="M53.6667 0.5L54.7893 3.95492H58.422L55.483 6.09017L56.6056 9.54508L53.6667 7.40983L50.7278 9.54508L51.8503 6.09017L48.9114 3.95492H52.5441L53.6667 0.5Z"
+                      fill="#EFC20D"
+                    />
+                  </svg>
+                </div>
+                <div class="text">4,8</div>
+              </div>
+            </div>
+
+            <div class="desc">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            </div>
+          </div>
+
+          <div class="swiper-slide reviews__slide">
+            <div class="video">
+              <div class="play">
+                <svg
+                  width="117"
+                  height="57"
+                  viewBox="0 0 117 57"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M17.8333 0C8.16827 0 0.333252 7.83502 0.333252 17.5C0.333252 27.165 8.16827 35 17.8333 35H21.9172C21.5363 36.4359 21.3333 37.9442 21.3333 39.5C21.3333 49.165 29.1683 57 38.8333 57H98.8333C108.498 57 116.333 49.165 116.333 39.5C116.333 29.835 108.498 22 98.8333 22H94.7493C95.1302 20.5641 95.3333 19.0558 95.3333 17.5C95.3333 7.83502 87.4982 0 77.8333 0H17.8333Z"
+                    fill="#DD1414"
+                  />
+                  <path
+                    d="M78.3333 29L48.3333 46.3205V11.6795L78.3333 29Z"
+                    fill="#F6F6F6"
+                  />
+                </svg>
+              </div>
+              <video src="" poster="../img/poster.webp"></video>
+            </div>
+
+            <div class="head">
+              <div class="date">10 декабря 2023</div>
+              <div class="rating">
+                <div class="stars">
+                  <svg
+                    width="59"
+                    height="11"
+                    viewBox="0 0 59 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5.66669 0.5L6.78926 3.95492H10.422L7.48304 6.09017L8.60561 9.54508L5.66669 7.40983L2.72776 9.54508L3.85033 6.09017L0.911405 3.95492H4.54412L5.66669 0.5Z"
+                      fill="#EFC20D"
+                    />
+                    <path
+                      d="M17.6667 0.5L18.7893 3.95492H22.422L19.483 6.09017L20.6056 9.54508L17.6667 7.40983L14.7278 9.54508L15.8503 6.09017L12.9114 3.95492H16.5441L17.6667 0.5Z"
+                      fill="#EFC20D"
+                    />
+                    <path
+                      d="M29.6667 0.5L30.7893 3.95492H34.422L31.483 6.09017L32.6056 9.54508L29.6667 7.40983L26.7278 9.54508L27.8503 6.09017L24.9114 3.95492H28.5441L29.6667 0.5Z"
+                      fill="#EFC20D"
+                    />
+                    <path
+                      d="M41.6667 0.5L42.7893 3.95492H46.422L43.483 6.09017L44.6056 9.54508L41.6667 7.40983L38.7278 9.54508L39.8503 6.09017L36.9114 3.95492H40.5441L41.6667 0.5Z"
+                      fill="#EFC20D"
+                    />
+                    <path
+                      d="M53.6667 0.5L54.7893 3.95492H58.422L55.483 6.09017L56.6056 9.54508L53.6667 7.40983L50.7278 9.54508L51.8503 6.09017L48.9114 3.95492H52.5441L53.6667 0.5Z"
+                      fill="#EFC20D"
+                    />
+                  </svg>
+                </div>
+                <div class="text">4,8</div>
+              </div>
+            </div>
+
+            <div class="desc">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            </div>
+          </div>
+
+          <div class="swiper-slide reviews__slide">
+            <div class="video">
+              <div class="play">
+                <svg
+                  width="117"
+                  height="57"
+                  viewBox="0 0 117 57"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M17.8333 0C8.16827 0 0.333252 7.83502 0.333252 17.5C0.333252 27.165 8.16827 35 17.8333 35H21.9172C21.5363 36.4359 21.3333 37.9442 21.3333 39.5C21.3333 49.165 29.1683 57 38.8333 57H98.8333C108.498 57 116.333 49.165 116.333 39.5C116.333 29.835 108.498 22 98.8333 22H94.7493C95.1302 20.5641 95.3333 19.0558 95.3333 17.5C95.3333 7.83502 87.4982 0 77.8333 0H17.8333Z"
+                    fill="#DD1414"
+                  />
+                  <path
+                    d="M78.3333 29L48.3333 46.3205V11.6795L78.3333 29Z"
+                    fill="#F6F6F6"
+                  />
+                </svg>
+              </div>
+              <video src="" poster="../img/poster.webp"></video>
+            </div>
+
+            <div class="head">
+              <div class="date">10 декабря 2023</div>
+              <div class="rating">
+                <div class="stars">
+                  <svg
+                    width="59"
+                    height="11"
+                    viewBox="0 0 59 11"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5.66669 0.5L6.78926 3.95492H10.422L7.48304 6.09017L8.60561 9.54508L5.66669 7.40983L2.72776 9.54508L3.85033 6.09017L0.911405 3.95492H4.54412L5.66669 0.5Z"
+                      fill="#EFC20D"
+                    />
+                    <path
+                      d="M17.6667 0.5L18.7893 3.95492H22.422L19.483 6.09017L20.6056 9.54508L17.6667 7.40983L14.7278 9.54508L15.8503 6.09017L12.9114 3.95492H16.5441L17.6667 0.5Z"
+                      fill="#EFC20D"
+                    />
+                    <path
+                      d="M29.6667 0.5L30.7893 3.95492H34.422L31.483 6.09017L32.6056 9.54508L29.6667 7.40983L26.7278 9.54508L27.8503 6.09017L24.9114 3.95492H28.5441L29.6667 0.5Z"
+                      fill="#EFC20D"
+                    />
+                    <path
+                      d="M41.6667 0.5L42.7893 3.95492H46.422L43.483 6.09017L44.6056 9.54508L41.6667 7.40983L38.7278 9.54508L39.8503 6.09017L36.9114 3.95492H40.5441L41.6667 0.5Z"
+                      fill="#EFC20D"
+                    />
+                    <path
+                      d="M53.6667 0.5L54.7893 3.95492H58.422L55.483 6.09017L56.6056 9.54508L53.6667 7.40983L50.7278 9.54508L51.8503 6.09017L48.9114 3.95492H52.5441L53.6667 0.5Z"
+                      fill="#EFC20D"
+                    />
+                  </svg>
+                </div>
+                <div class="text">4,8</div>
+              </div>
+            </div>
+
+            <div class="desc">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="faq">
+        <div class="container">
+          <h2 class="title__section faq__title">
+            Популярные вопросы <br />
+            к страховому агенту
+          </h2>
+
+          <div class="faq__items">
+            <div class="faq__item">
+              <div class="faq__item-header">
+                <div class="faq__item-title">
+                  Какую выгоду я получу, обратившись к страховому агенту,
+                  а не напрямую к банку или страховой компании?
+                </div>
+                <div class="faq__item-toggler">
+                  <svg
+                    width="49"
+                    height="34"
+                    viewBox="0 0 49 34"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16.1238 19C17.108 26.8926 23.8408 33 32 33C40.8365 33 48 25.8366 48 17C48 8.16344 40.8365 1 32 1C23.8408 1 17.108 7.10738 16.1238 15"
+                      stroke="#F6F6F6"
+                    />
+                    <path
+                      class="arrow"
+                      d="M32.3536 17.3536C32.5488 17.1583 32.5488 16.8417 32.3536 16.6464L29.1716 13.4645C28.9763 13.2692 28.6597 13.2692 28.4645 13.4645C28.2692 13.6597 28.2692 13.9763 28.4645 14.1716L31.2929 17L28.4645 19.8284C28.2692 20.0237 28.2692 20.3403 28.4645 20.5355C28.6597 20.7308 28.9763 20.7308 29.1716 20.5355L32.3536 17.3536ZM0 17.5H32V16.5H0V17.5Z"
+                      fill="#F6F6F6"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="faq__item-bottom">
+                <div class="faq__item-text">
+                  In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+                  Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+                </div>
+              </div>
+            </div>
+
+            <div class="faq__item">
+              <div class="faq__item-header">
+                <div class="faq__item-title">
+                  Какую выгоду я получу, обратившись к страховому агенту,
+                  а не напрямую к банку или страховой компании?
+                </div>
+                <div class="faq__item-toggler">
+                  <svg
+                    width="49"
+                    height="34"
+                    viewBox="0 0 49 34"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16.1238 19C17.108 26.8926 23.8408 33 32 33C40.8365 33 48 25.8366 48 17C48 8.16344 40.8365 1 32 1C23.8408 1 17.108 7.10738 16.1238 15"
+                      stroke="#F6F6F6"
+                    />
+                    <path
+                      class="arrow"
+                      d="M32.3536 17.3536C32.5488 17.1583 32.5488 16.8417 32.3536 16.6464L29.1716 13.4645C28.9763 13.2692 28.6597 13.2692 28.4645 13.4645C28.2692 13.6597 28.2692 13.9763 28.4645 14.1716L31.2929 17L28.4645 19.8284C28.2692 20.0237 28.2692 20.3403 28.4645 20.5355C28.6597 20.7308 28.9763 20.7308 29.1716 20.5355L32.3536 17.3536ZM0 17.5H32V16.5H0V17.5Z"
+                      fill="#F6F6F6"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="faq__item-bottom">
+                <div class="faq__item-text">
+                  In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+                  Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+                </div>
+              </div>
+            </div>
+
+            <div class="faq__item">
+              <div class="faq__item-header">
+                <div class="faq__item-title">
+                  Какую выгоду я получу, обратившись к страховому агенту,
+                  а не напрямую к банку или страховой компании?
+                </div>
+                <div class="faq__item-toggler">
+                  <svg
+                    width="49"
+                    height="34"
+                    viewBox="0 0 49 34"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16.1238 19C17.108 26.8926 23.8408 33 32 33C40.8365 33 48 25.8366 48 17C48 8.16344 40.8365 1 32 1C23.8408 1 17.108 7.10738 16.1238 15"
+                      stroke="#F6F6F6"
+                    />
+                    <path
+                      class="arrow"
+                      d="M32.3536 17.3536C32.5488 17.1583 32.5488 16.8417 32.3536 16.6464L29.1716 13.4645C28.9763 13.2692 28.6597 13.2692 28.4645 13.4645C28.2692 13.6597 28.2692 13.9763 28.4645 14.1716L31.2929 17L28.4645 19.8284C28.2692 20.0237 28.2692 20.3403 28.4645 20.5355C28.6597 20.7308 28.9763 20.7308 29.1716 20.5355L32.3536 17.3536ZM0 17.5H32V16.5H0V17.5Z"
+                      fill="#F6F6F6"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="faq__item-bottom">
+                <div class="faq__item-text">
+                  In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+                  Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+                </div>
+              </div>
+            </div>
+
+            <div class="faq__item">
+              <div class="faq__item-header">
+                <div class="faq__item-title">
+                  Какую выгоду я получу, обратившись к страховому агенту,
+                  а не напрямую к банку или страховой компании?
+                </div>
+                <div class="faq__item-toggler">
+                  <svg
+                    width="49"
+                    height="34"
+                    viewBox="0 0 49 34"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16.1238 19C17.108 26.8926 23.8408 33 32 33C40.8365 33 48 25.8366 48 17C48 8.16344 40.8365 1 32 1C23.8408 1 17.108 7.10738 16.1238 15"
+                      stroke="#F6F6F6"
+                    />
+                    <path
+                      class="arrow"
+                      d="M32.3536 17.3536C32.5488 17.1583 32.5488 16.8417 32.3536 16.6464L29.1716 13.4645C28.9763 13.2692 28.6597 13.2692 28.4645 13.4645C28.2692 13.6597 28.2692 13.9763 28.4645 14.1716L31.2929 17L28.4645 19.8284C28.2692 20.0237 28.2692 20.3403 28.4645 20.5355C28.6597 20.7308 28.9763 20.7308 29.1716 20.5355L32.3536 17.3536ZM0 17.5H32V16.5H0V17.5Z"
+                      fill="#F6F6F6"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="faq__item-bottom">
+                <div class="faq__item-text">
+                  In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+                  Nullam dictum felis eu pede mollis pretium. Integer tincidunt. In
+                  enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam
+                  dictum felis eu pede mollis pretium. Integer tincidunt.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="consult">
+  <div class="container consult__container">
+    <div class="consult__head">
+      <div class="title__section consult__title">
+        Получить бесплатную консультацию
+      </div>
+
+      <div class="consult__desc">Мы свяжемся с Вами в ближайшие 5 минут</div>
+    </div>
+
+    <div class="consult__wrapper">
+      <div class="consult__rside">
+        <form action="" class="consult__form form-consult">
+          <div class="form-consult__block">
+            <textarea
+              name=""
+              id=""
+              class="form-consult__input"
+              placeholder="Введите ваш вопрос"
+            ></textarea>
+          </div>
+          <div class="form-consult__block">
+            <input type="text" placeholder="Имя" class="form-consult__input" />
+            <input
+              type="text"
+              placeholder="Телефон"
+              class="form-consult__input"
+            />
+          </div>
+
+          <button
+            type="submit"
+            class="btn-reset btn--accent form-consult__submit"
+          >
+            Отправить
+          </button>
+        </form>
+      </div>
+      <div class="consult__lside">
+        <div class="consult__call">
+          <div class="block">
+            <div class="title">Позвони нам</div>
+            <div class="call-phones">
+              <div class="call-phone">
+                <a href="">8 800 800 80 80</a>
+                <span>— Менеджер</span>
+              </div>
+
+              <div class="call-phone">
+                <a href="">8 800 800 80 80</a>
+                <span>— Старший юрист</span>
+              </div>
+
+              <div class="call-phone">
+                <a href="">8 800 800 80 80</a>
+                <span>— Старший юрист</span>
+              </div>
+            </div>
+          </div>
+          <div class="block">
+            <div class="title">НАПИШИ НАМ</div>
+            <div class="socials">
+              <a class="social wh" href="">
+                <svg
+                  width="19"
+                  height="17"
+                  viewBox="0 0 19 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19 0.602225L15.9946 16.2923C15.9946 16.2923 15.5741 17.3801 14.4189 16.8584L7.48458 11.3526L7.45242 11.3364C8.38909 10.4654 15.6524 3.70266 15.9698 3.39612C16.4613 2.92136 16.1562 2.63873 15.5856 2.99736L4.85679 10.053L0.717638 8.61077C0.717638 8.61077 0.0662573 8.37083 0.00359284 7.84911C-0.0598962 7.32653 0.739076 7.0439 0.739076 7.0439L17.6131 0.188948C17.6131 0.188948 19 -0.44207 19 0.602225Z"
+                    fill="#FEFEFE"
+                  />
+                </svg>
+              </a>
+
+              <a class="social tg" href="">
+                <svg
+                  width="21"
+                  height="21"
+                  viewBox="0 0 21 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.9268 3.0625C15.9512 1.09375 13.3171 0 10.5366 0C4.7561 0 0.0731696 4.66667 0.0731696 10.4271C0.0731696 12.25 0.585366 14.0729 1.46341 15.6042L0 21L5.56098 19.5417C7.09756 20.3438 8.78049 20.7812 10.5366 20.7812C16.3171 20.7812 21 16.1146 21 10.3542C20.9268 7.65625 19.9024 5.03125 17.9268 3.0625ZM15.5854 14.1458C15.3659 14.7292 14.3415 15.3125 13.8293 15.3854C13.3902 15.4583 12.8049 15.4583 12.2195 15.3125C11.8537 15.1667 11.3415 15.0208 10.7561 14.7292C8.12195 13.6354 6.43903 11.0104 6.29268 10.7917C6.14634 10.6458 5.19512 9.40625 5.19512 8.09375C5.19512 6.78125 5.85366 6.19792 6.07317 5.90625C6.29268 5.61458 6.58536 5.61458 6.80488 5.61458C6.95122 5.61458 7.17073 5.61458 7.31707 5.61458C7.46341 5.61458 7.68293 5.54167 7.90244 6.05208C8.12195 6.5625 8.63414 7.875 8.70731 7.94792C8.78049 8.09375 8.78049 8.23958 8.70731 8.38542C8.63414 8.53125 8.56097 8.67708 8.41463 8.82292C8.26829 8.96875 8.12195 9.1875 8.04878 9.26042C7.90244 9.40625 7.7561 9.55208 7.90244 9.77083C8.04878 10.0625 8.56097 10.8646 9.36585 11.5937C10.3902 12.4687 11.1951 12.7604 11.4878 12.9063C11.7805 13.0521 11.9268 12.9792 12.0732 12.8333C12.2195 12.6875 12.7317 12.1042 12.878 11.8125C13.0244 11.5208 13.2439 11.5938 13.4634 11.6667C13.6829 11.7396 15 12.3958 15.2195 12.5417C15.5122 12.6875 15.6585 12.7604 15.7317 12.8333C15.8049 13.0521 15.8049 13.5625 15.5854 14.1458Z"
+                    fill="#F6F6F6"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+
+    <footer class="footer">
+  <div class="container footer__container">
+    <div class="footer__col">
+      <a class="footer__logo" href="">
+        <img src="../img/logo.svg" width="250" height="59" alt="Центр 7" />
+      </a>
+    </div>
+
+    <div class="footer__col col--nav">
+      <nav class="footer__nav">
+        <ul class="list-reset list">
+          <li class="item">
+            <a class="link" href="">О компании</a>
+          </li>
+
+          <li class="item">
+            <a class="link" href="">FAQ</a>
+          </li>
+
+          <li class="item">
+            <a class="link" href="">Кешбек</a>
+          </li>
+
+          <li class="item">
+            <a class="link" href="">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="footer__services">
+        <span class="footer__services-title">
+          Услуги
+          <svg
+            width="16"
+            height="10"
+            viewBox="0 0 16 10"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1 9L8 1L15 9"
+              stroke="#F6F6F6"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </span>
+        <div class="footer__services-items">
+          <div class="head">Страхование</div>
+          <ul class="list-reset list">
+            <li class="item">
+              <a href="">Автострахование</a>
+            </li>
+            <li class="item">
+              <a href="">Страхование ипотеки</a>
+            </li>
+          </ul>
+          <div class="head">Кредитование</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__col">
+      <div class="footer__organization">
+        <div class="title">Карточка организации</div>
+        <ul class="list-reset list">
+          <li>ИНН: 00000000</li>
+          <li>ОГРНИП: 00000000</li>
+          <li>Офис: Адрес</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__col">
+      <div class="footer__reviews">
+        <a class="footer__review" href="">
+          <span class="name">Яндекс</span>
+          <span class="rating">
+            <svg
+              width="16"
+              height="15"
+              viewBox="0 0 16 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
+                fill="#EFC20D"
+              />
+            </svg>
+            4,8
+          </span>
+        </a>
+
+        <a class="footer__review" href="">
+          <span class="name">Google</span>
+          <span class="rating">
+            <svg
+              width="16"
+              height="15"
+              viewBox="0 0 16 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
+                fill="#EFC20D"
+              />
+            </svg>
+            4,9
+          </span>
+        </a>
+
+        <a class="footer__review" href="">
+          <span class="name">2Gis</span>
+          <span class="rating">
+            <svg
+              width="16"
+              height="15"
+              viewBox="0 0 16 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
+                fill="#EFC20D"
+              />
+            </svg>
+            5
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <div class="container">
+      <a class="footer__policy" href="">Политика конфиденциальности</a>
+      <a class="footer__policy" href=""
+        >Соглашение на обработку персональных данных</a
+      >
+    </div>
+  </div>
+</footer>
+
+<div class="modal" id="partner">
+  <div class="modal__container">
+    <div class="modal__close">
+      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M30 10L10 30M10 10L30 30" stroke="white" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </div>
+    <div class="modal__content">
+      <div class="modal__title">
+        Станьте нашим партнером <span>и получайте ощутимую выгоду от сотрудничества</span>
+      </div>
+      <div class="modal__form">
+        <form action="" class="modal-form">
+          <div class="modal-form__block">
+            <input type="text" placeholder="Имя">
+            <input type="text" placeholder="Телефон">
+          </div>
+          <button type="submit" class="btn-reset btn--accent modal-form__btn">Отправить</button>
+        </form>
+      </div>
+    </div>
+    <div class="modal__img">
+      <img src="../img/modal-bg-1.webp" aria-hidden="true">
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="consult">
+  <div class="modal__container">
+    <div class="modal__close">
+      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M30 10L10 30M10 10L30 30" stroke="white" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </div>
+    <div class="modal__content">
+      <div class="modal__title">
+        Оставьте свои данные и мы проведем <span>бесплатную консультацию для вас</span>
+      </div>
+      <div class="modal__form">
+        <form action="" class="modal-form">
+          <div class="modal-form__block">
+            <textarea placeholder="Введите ваш запрос"></textarea>
+          </div>
+          <div class="modal-form__block">
+            <input type="text" placeholder="Имя">
+            <input type="text" placeholder="Телефон">
+          </div>
+          <button type="submit" class="btn-reset btn--accent modal-form__btn">Отправить</button>
+        </form>
+      </div>
+    </div>
+    <div class="modal__img">
+      <img src="../img/modal-bg-2.webp" aria-hidden="true">
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="success">
+  <div class="modal__container">
+    <div class="modal__close">
+      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M30 10L10 30M10 10L30 30" stroke="white" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </div>
+    <div class="modal__content">
+      <div class="modal__title">
+        Спасибо за заявку! <br/>
+        <span>Мы свяжемся с вами в ближайшее время</span>
+      </div>
+
+    </div>
+    <div class="modal__img">
+      <img src="../img/success-form-bg.webp" aria-hidden="true">
+    </div>
+  </div>
+</div>
+
+<div class="modal modal-frame" id="ipoteka">
+  <div class="modal__container">
+    <div class="modal__close">
+      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M30 10L10 30M10 10L30 30" stroke="white" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </div>
+    <div class="modal__content">
+      <iframe src="https://b2c.pampadu.ru/index.html#32aae9f0-776c-4cf2-8104-69f09d36f6bf" style="width: 100%; border: none; height: 650px; min-width: 320px; overflow: hidden;" id=ppdwi scrolling=no></iframe>
+      <script src="https://b2c.pampadu.ru/ppdw.js"></script>
+
+    </div>
+
+  </div>
+</div>
+
+<div class="modal modal-frame" id="osago">
+  <div class="modal__container">
+    <div class="modal__close">
+      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M30 10L10 30M10 10L30 30" stroke="white" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </div>
+    <div class="modal__content">
+      <iframe src="https://b2c.pampadu.ru/index.html#32aae9f0-776c-4cf2-8104-69f09d36f6bf" style="width: 100%; border: none; height: 650px; min-width: 320px; overflow: hidden;" id=ppdwi scrolling=no></iframe>
+      <script src="https://b2c.pampadu.ru/ppdw.js"></script>
+
+    </div>
+
+  </div>
+</div>
+  </body>
+</html>
