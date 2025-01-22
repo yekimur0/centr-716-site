@@ -1227,9 +1227,21 @@ const listener = () => {
     if (target.dataset.button === 'partner') openModal(target);
     if (target.dataset.button === 'ipoteka') openModal(target);
     if (target.dataset.button === 'osago') openModal(target);
+    if (target.dataset.button === 'polis') openModal(target);
     if (target.classList.contains('modal__close') || target.classList.contains('modal')) closeModal();
     if (target.classList.contains('footer__services-title')) showSubMenuFooter(target);
+    if (target.dataset.tabBtn) changeTab(target);
   });
+  function changeTab(target) {
+    const id = target.dataset.tabBtn;
+    const tab = document.querySelector(`[data-logo="${id}"]`);
+    const active = document.querySelector('.logos.active');
+    const activeBtn = document.querySelector('.action.active');
+    if (active) active.classList.remove('active');
+    tab.classList.add('active');
+    if (activeBtn) activeBtn.classList.remove('active');
+    target.classList.add('active');
+  }
   function showSubMenuMobile(target) {
     const submenu = target.querySelector('.submenu');
     submenu.classList.toggle('active');
@@ -22020,4 +22032,3 @@ __webpack_require__.r(__webpack_exports__);
 
 /******/ })()
 ;
-//# sourceMappingURL=main.js.map
